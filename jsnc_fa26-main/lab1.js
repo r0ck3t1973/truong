@@ -86,7 +86,36 @@ function test03(price,quantity){
 
 const total = test03(50000,3);
 
-console("Tien:" + total);
+console.log("Tien:" + total);
+
+// Bai 7
+
+const math = 9;
+
+const english = 9;
+
+const hoa = 9;
+
+function tongket(math,english,hoa){
+    return (math + english + hoa) / 3;
+}
+
+const avt = tongket(9,9,9);
+
+console.log("Diem Trung Binh La:" + avt);
+
+// Bai Tong Hop
+
+function test04(name,age,className){
+    return "Ten: " + name , "Tuoi:" +age , "Lop:" + className;
+}
+
+test04("Truong");
+test04("19");
+test04("WD21302");
+
+
+
 
 
 
