@@ -122,6 +122,6 @@ for(let i= 0; i< product.length; i++){
 
 let tong = tinhtong(product);
 HTML.innerHTML = demo;
-HTML.innerHTML = "<h1 style='color: green;'>Hien thi danh sach san san pham</h1>" + demo + `+ demo + <h2>Tong tien : ${tong}</h2>`;
+HTML.innerHTML = "<h1 style='color: green;'>Hien8 thi danh sach san san pham</h1>" + demo + `+ demo + <h2>Tong tien : ${tong}</h2>`;
 console.log(HTML);
 console.log(tong);
