@@ -1,9 +1,3 @@
-// map() : duyet qua arrray
-
-// Nacffic : chen bien, code nhieu dong
-
-// Arrow funtion : () => {}, ko can tien, truyen function
-
 // Template Literal
 const name = "tuancode";
 const age = 20;
