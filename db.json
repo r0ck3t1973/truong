@@ -18,5 +18,99 @@
       "email": "hoadv@gmail.com",
       "id": 3
     }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Ipone 17 bản Thường",
+      "price": 30000000
+    },
+    {
+      "id": 2,
+      "name": "Ipone 17 bản Pro",
+      "price": 39700200
+    },
+    {
+      "id": 3,
+      "name": "Ipone 13 bản Pro Max",
+      "price": 10000000
+    }
+  ],
+  "newProduct": [
+    {
+      "id": 1,
+      "name": "Adidas EQ 21 Run Shoes GZ0591 Màu Trắng",
+      "price": 1550000,
+      "quantity": 100,
+      "category": "Giay The Thao"
+    },
+    {
+      "id": 2,
+      "name": "Adidas Streettalk",
+      "price": 1800000,
+      "quantity": 30,
+      "category": "Giay Thoi Trang"
+    },
+    {
+      "id": 3,
+      "name": "Adidas Advantage 2.0 Nam - IG9166",
+      "price": 1400000,
+      "quantity": 15,
+      "category": "Giay Thoi Trang"
+    },
+    {
+      "id": 4,
+      "name": "Adidas Forum kem sữa siêu cấp",
+      "price": 650000,
+      "quantity": 150,
+      "category": "Giay Thoi Trang"
+    }
+  ],
+  "bang": [
+    {
+      "id": 1,
+      "name": "Ipone 17 bản Thường",
+      "price": 30000000
+    },
+    {
+      "id": 2,
+      "name": "Ipone 17 bản Pro",
+      "price": 39700200
+    },
+    {
+      "id": 3,
+      "name": "Ipone 13 bản Pro Max",
+      "price": 10000000
+    },
+    {
+      "name": "hhhh",
+      "price": 22727373,
+      "id": 5
+    },
+    {
+      "name": "hhhh",
+      "price": 22727373,
+      "id": 6
+    },
+    {
+      "name": "Giay D&G",
+      "price": 120000,
+      "id": 8
+    },
+    {
+      "name": "Giay D&G",
+      "price": 120000,
+      "id": 9
+    },
+    {
+      "name": "Nguyễn Văn A",
+      "price": 1,
+      "id": 10
+    },
+    {
+      "name": "Giay D&G",
+      "price": 1,
+      "id": 11
+    }
   ]
 }

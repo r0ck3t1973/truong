@@ -1,71 +1,124 @@
-// Template Literal
-const name = "tuancode";
-const age = 20;
-const info = `Ten: ${name}, Tuoi: ${age}`;
+// 25. Bai 1:
+const ten = "Nguyen Van Truong";
+
+const age = 19;
+
+const major = "Lap Trinh Web";
+
+const info = `
+   Xin Chao ${ten}.
+   Tuoi ${age}.
+   Nganh Hoc ${major}
+`;
+
 console.log(info);
-// ``
-const myName = `- Ten Toi la: ${name}
-                - Tuoi: ${age}`;
-                console.log(myName);
-    const student = {
-        id: 1,
-        name: "tuancode",
-        age: 20,
-    };
-    const studentInfo = ` - Id: ${student.id}
-                        -Ten: ${student.name}
-                        -Tuoi: ${student.age}`;
-    console.log(studentInfo);
-    //25 - Template Litera
-    const name1 = "tuancode";
-    const age1 = 20;
-    const major1 = "IT";
-    const info1 = ` - Ten: ${name1}
-                    - Tuoi: ${age1}
-                    - Nganh: ${major1}`;
-    console.log(info1);
 
-    // Bai Tap 26
-    const student1 = {
-        name: "tuancode",
-        age:20,
-        major:"IT",
-    };
-    const studentInfo1 = ` - Ten: ${student1.name}
-                        - Tuoi: ${student1.age}
-                        - Nganh: ${student1.major}`;
-        console.log(studentInfo1);
-// 27
-function add(a,b){
+// 26. Bai 2:
+
+const student = {
+
+id: 1,
+
+name: "Nguyễn Văn An",
+
+age: 20,
+
+major: "Lập trình Web",
+
+};
+
+const info_1 = `
+    Ma So ${student.id}.
+    Ho va Ten ${student.name}.
+    Tuoi ${student.age}.
+    Nganh Hoc ${student.major}
+`;
+
+console.log(info_1);
+
+// 28. Bai 3
+
+const add = (a, b) => {
     return a + b;
+};
+
+console.log(add(5, 3));
+
+// 29. Bai 4
+
+const square = (n) => {
+    return n*n;
 }
 
-const result = add(10,20); 
-const resultInfo = `Ket qua cua a va b: ${result}`;
-console.log(resultInfo);
-// 28 Arrow Function  +Viết các Arrow Function:
-// a. Tinh binh phong
-const square = (x) => x * x;
 console.log(square(5));
-// b. tinh tong
-const sum = (a,b) => a + b;
-console.log(sum(10,20));
-// c. Chao nguoi dungs
-function sayHello(name){
-console.log(name)
+
+const sum = (x,y) =>{
+    return x + y;
 }
-sayHello("Xin chao tuan");
-//  29
-const numbers = [1, 2, 3, 4, 5];
-const doubled = numbers.map((n)=>n*2);
-console.log(doubled);
-// bai 30
-const students = [
-    { id: 1, name: "An"},
-    { id: 2, name: "Tuan"},
-    { id: 3, name: "PhAn"},
-];
-const Info = students.map((students)=>{
-    return students.name
+console.log(sum(10,20));
+
+const hello = (name) => `Xin chao ${name}`;
+console.log(hello("An"));
+
+// 9. Bai 5 
+const number = [1,2,4,6,8];
+
+const newNumber = number.map(function(number){
+    return number * 2;
 });
-console.log(students);
+
+console.log("bang moi",newNumber);
+
+// 30.Bai 6
+
+const students = [
+    {
+    id : 1,   
+    name : "Nguyen Van Cuong"
+    },
+    { 
+    id : 2,   
+    name : "Nguyen Van Binh"
+    },
+    {
+    id : 3,   
+    name : "Pham Xuan Tien"
+    }
+];
+
+const nameStudents = students.map(student =>
+        student.name
+    );
+
+    console.log("Danh sach ten",nameStudents);
+
+// Bai 32.Bai 8
+
+const products = [ 
+    { id: 1, name: "iPhone 15", price: 20000000, },
+    { id: 2, name: "MacBook Air", price: 25000000, }, 
+    { id: 3, name: "AirPods", price: 5000000, }
+];
+const disphayProducts = products.map(products => `
+           Id : ${products.id}, 
+           Name : ${products.name};
+    `);
+console.log("Danh sach san pham",disphayProducts);
+
+// Bai Tong Hop
+
+const sp = [ 
+    { id: 1, name: "Áo thun", price: 150000, category: "Thời trang", },
+    { id: 2, name: "Quần jean", price: 350000, category: "Thời trang", },
+    { id: 3, name: "Giày sneaker", price: 800000, category: "Giày", }, 
+];
+
+const html = sp.map(sp =>`
+    <tr class="hover:bg-gray-50">
+        <td class="px-4 py-2 border border-gray-300">${sp.id}</td>
+        <td class="px-4 py-2 border border-gray-300">${sp.name}</td>
+        <td class="px-4 py-2 border border-gray-300">${sp.price}</td>
+        <td class="px-4 py-2 border border-gray-300">${sp.category}</td>
+    </tr>
+`).join("");
+document.getElementById("lab3").innerHTML = html;

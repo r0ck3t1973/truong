@@ -1,12 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Javascript Nâng Cao - WEB2064</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+
   <body>
+    <!-- Thanh điều hướng -->
     <nav class="bg-blue-600 text-white shadow">
       <div
         class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between"
@@ -14,58 +18,133 @@
         <strong>WEB2064 JSNC</strong>
 
         <div class="hidden md:flex items-center space-x-8">
-          <a href="index.html" class="hover:text-gray-200">Danh sách</a>
-          <a href="add.html" class="hover:text-gray-200">Thêm mới</a>
+          <a href="index.html" class="hover:text-gray-200">
+            Danh sách
+          </a>
+
+          <a href="add.html" class="hover:text-gray-200">
+            Thêm mới
+          </a>
         </div>
-        <div class="hidden md:flex items-center space-x-6"></div>
       </div>
     </nav>
+
     <div class="max-w-6xl mx-auto mt-10 px-4 text-center">
-      <h1 id="title" class="text-2xl font-semibold mb-6">Danh sách</h1>
-  <div id="students"></div>
-  <div id = "products"></div>
+      <h1 id="title" class="text-2xl font-semibold mb-6">
+        Bang Tong Hop Bai Lap 3
+      </h1>
+
+      <div class="overflow-x-auto">
+        <table class="w-full border border-gray-300 rounded-lg">
+          <thead class="bg-gray-100">
+             <tr>
+              <th class="px-4 py-2 border border-gray-300">ID</th>
+              <th class="px-4 py-2 border border-gray-300">Ten San Pham</th>
+              <th class="px-4 py-2 border border-gray-300">Gia Tien</th>
+              <th class="px-4 py-2 border border-gray-300">The Loai</th>
+            </tr>
+          </thead>
+          <tbody id="lab3"></tbody>
+        </table>
+      </div>
+    </div>
+    <!-- Nội dung chính -->
+    <div class="max-w-6xl mx-auto mt-10 px-4 text-center">
+      <h1 id="title" class="text-2xl font-semibold mb-6">
+        Danh sách sinh viên
+      </h1>
+
+      <!-- Bảng danh sách sinh viên -->
       <div class="overflow-x-auto">
         <table class="w-full border border-gray-300 rounded-lg">
           <thead class="bg-gray-100">
             <tr>
-              <th class="px-4 py-2 border border-gray-300">ID2</th>
-              <th class="px-4 py-2 border border-gray-300">Name</th>
-              <th class="px-4 py-2 border border-gray-300">Age</th>
+              <th class="px-4 py-2 border border-gray-300">ID</th>
+              <th class="px-4 py-2 border border-gray-300">Họ tên</th>
+              <th class="px-4 py-2 border border-gray-300">Tuổi</th>
               <th class="px-4 py-2 border border-gray-300">Actions</th>
             </tr>
           </thead>
 
-          <tbody id="students">
-            <tr class="hover:bg-gray-50">
-              <td class="px-4 py-2 border border-gray-300">1</td>
-              <td class="px-4 py-2 border border-gray-300">Name</td>
-              <td class="px-4 py-2 border border-gray-300">33</td>
-              <td class="px-4 py-2 border border-gray-300">
-                <div class="flex items-center justify-center gap-2">
-                  <a
-                    href="#"
-                    class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded"
-                  >
-                    Edit
-                  </a>
-
-                  <button
-                    class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded"
-                  >
-                    Delete
-                  </button>
-                </div>
-              </td>
-            </tr>
-          </tbody>
+          <!-- JavaScript sẽ thêm dữ liệu vào đây -->
           <tbody id="list"></tbody>
         </table>
       </div>
     </div>
+  
+    <div class="max-w-6xl mx-auto mt-10 px-4 text-center">
+      <h1 id="title" class="text-2xl font-semibold mb-6">
+        Danh sach san pham
+      </h1>
+
+      <div class="overflow-x-auto">
+        <table class="w-full border-red-300 rounded-lg">
+           <thead class="bg-red-100">
+              <th class="px-4 py-2 border border-red-300">ID</th>
+              <th class="px-4 py-2 border border-red-300">Name</th>
+              <th class="px-4 py-2 border border-red-300">Price</th>
+           </thead>
+
+           <tbody id="test"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto mt-10 px-4 text-center">
+      <h1 id="title" class="text-2xl font-senibold mb-6">
+        Bai Tong Hop Danh Sach San Pham
+      </h1>
+
+      <div class="overflow-x-auto">
+        <table class="w-full border-gray-300 rounded-lg-20">
+          <thead class="bg-cyan-100">
+            <th class="px-4 py-2 border border-gray-300">STT</th>
+            <th class="px-4 py-2 border border-gray-300">ID</th>
+            <th class="px-4 py-2 border border-gray-300">Ten san pham</th>
+            <th class="px-4 py-2 border border-gray-300">Gia</th>
+            <th class="px-4 py-2 border border-gray-300">So luong</th>
+            <th class="px-4 py-2 border border-gray-300">The Thoai</th>
+            <th class="px-4 py-2 border border-gray-300">Chuc nang</th>
+          </thead>
+
+          <tbody id="warehouse"></tbody>
+        </table>
+      </div>
+    </div>
+
+
+    <div class="max-w-6xl mx-auto mt-10 px-4 text-center">
+      <h1 id="title" class="text-2xl font-semibold mb-6">
+        Danh sach bang
+      </h1>
+
+      <!-- Bảng danh sách sinh viên -->
+      <div class="overflow-x-auto">
+        <table class="w-full border border-gray-300 rounded-lg">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="px-4 py-2 border border-gray-300">ID</th>
+              <th class="px-4 py-2 border border-gray-300">Name</th>
+              <th class="px-4 py-2 border border-gray-300">Gia</th>
+              <th class="px-4 py-2 border border-gray-300">Actions</th>
+            </tr>
+          </thead>
+
+          <!-- JavaScript sẽ thêm dữ liệu vào đây -->
+          <tbody id="ice"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Thư viện Axios -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
-    <!-- <script src="lab1.js"></script>
-    <script src="lab2.js"></script> -->
-    <!-- >script src="lab3.js"></script> -->
-    <script src="lab4.js"></script>
+
+    <!-- File JavaScript -->
+    <!-- <script src="lab1.js"></script> -->
+    <!-- <script src="lab2.js"></script> -->
+    <script src="lab3.js"></script>
+     <script src="lab4.js"></script> 
+     <script src="lab5.js"></script> 
+
   </body>
 </html>
