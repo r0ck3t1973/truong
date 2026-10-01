@@ -7,14 +7,14 @@ document.getElementById("addForm").addEventListener("submit", function(e){
     axios.post("http://localhost:3000/bang",{
         "name": name,
         "price": Number(price)
-    }).then((result)=>{
-        console.log("them thanh cong", result.data);
+    }).then(()=>{
+        
         alert("Them Thanh Cong");
         
         location.replace("index.html");
     })
-    .catch((error) =>{
-        console.log("loi");
+    .catch(() =>{
+        
         alert("Them That Bai");
     })
 });

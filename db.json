@@ -93,16 +93,6 @@
       "id": 6
     },
     {
-      "name": "Giay D&G",
-      "price": 120000,
-      "id": 8
-    },
-    {
-      "name": "Giay D&G",
-      "price": 120000,
-      "id": 9
-    },
-    {
       "name": "Nguyễn Văn A",
       "price": 1,
       "id": 10
@@ -110,7 +100,12 @@
     {
       "name": "Giay D&G",
       "price": 1,
-      "id": 11
+      "id": 12
+    },
+    {
+      "name": "Giay D&G",
+      "price": 1,
+      "id": 13
     }
   ]
 }
