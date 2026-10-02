@@ -70,32 +70,20 @@
     {
       "id": 1,
       "name": "Ipone 17 bản Thường",
-      "price": 30000000
+      "price": 30000000,
+      "quantity": 100
     },
     {
       "id": 2,
       "name": "Ipone 17 bản Pro",
-      "price": 39700200
+      "price": 30000000,
+      "quantity": 0
     },
     {
       "id": 3,
       "name": "Ipone 13 bản Pro Max",
-      "price": 10000000
-    },
-    {
-      "name": "hhhh",
-      "price": 22727373,
-      "id": 6
-    },
-    {
-      "name": "Giay D&G",
-      "price": 1,
-      "id": 14
-    },
-    {
-      "name": "Nguyễn Văn A",
-      "price": 120000,
-      "id": 17
+      "price": 10000000,
+      "quantity": 200
     }
   ]
 }
